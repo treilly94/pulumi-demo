@@ -3,8 +3,10 @@
 import pulumi
 from pulumi_azure import core, storage
 
+config = pulumi.Config()
+
 # Create an Azure Resource Group
-resource_group = core.ResourceGroup('sportsdrink')
+resource_group = core.ResourceGroup('sportsdrink-{}'.format(pulumi.get_stack()))
 
 # Create an Azure resource (Storage Account)
 account = storage.Account('storage',
