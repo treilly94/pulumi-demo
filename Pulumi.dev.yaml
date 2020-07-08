@@ -1,4 +1,6 @@
 config:
   azure:environment: public
   azure:location: uksouth
+  pulumi-demo:password:
+    secure: AAABAPH8RCNK20sbw12pacyE3JuCG/XjEJDOvSoYMmbAieBH3a7pi7Idr7WoBbiJ3xrkrNfNDYQ=
   pulumi:template: azure-python
