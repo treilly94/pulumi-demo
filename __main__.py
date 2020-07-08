@@ -4,7 +4,7 @@ import pulumi
 from pulumi_azure import core, storage
 
 # Create an Azure Resource Group
-resource_group = core.ResourceGroup('resource_group')
+resource_group = core.ResourceGroup('sportsdrink')
 
 # Create an Azure resource (Storage Account)
 account = storage.Account('storage',
